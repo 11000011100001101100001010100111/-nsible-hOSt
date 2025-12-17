@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://xn--tatic-rra.tech/sitemap.xml
