@@ -1,0 +1,29 @@
+**Session Date: 2025-09-26**
+
+**Summary of Progress:**
+- **File System Sync & Media Handling:** Resolved critical "unsupported unicode" bug by implementing universal base64 encoding for all file uploads. This ensures both text and media files sync reliably.
+- **Enhanced File Editor:** Upgraded the file editor with a "Preview/Source" toggle, allowing users to switch between a visual media preview and its raw base64 source code.
+- **Toast Notifications:** Increased the default duration of toast messages to 8 seconds for better readability, while retaining the swipe-to-dismiss functionality.
+- **Command Prompt Intelligence:** Implemented basic logic for common shell commands (`ls`, `cd`, `mkdir`, `touch`, `rm`) to provide helpful feedback and navigation shortcuts.
+- **The Laboratory (Digital Arboretum):**
+    - Transformed the "lab" command into a destination, removing the previous redirect.
+    - Created a new, immersive 3D welcome screen using CSS perspective, featuring a starfield, a ground plane, and a foundational "tree" structure to represent the file system.
+    - Updated welcome text to "Entering the Digital Arboretum" to reflect the new vision.
+    - The welcome text now gracefully fades out after the environment loads.
+- **UI & Branding:**
+    - Designed and implemented a new custom SVG icon combining the "@" and "Δ" symbols.
+    - Replaced the generic "Home" icon in the Live Forum with the new custom "Desk" icon and updated its label.
+- **Command Prompt Responsiveness:** Optimized the scaling of the command prompt input field to feel more immediate and responsive to user typing.
+- **Project Organization:** Created a `documents` directory and an `aio_summary.txt` file to log session progress. A copy of the new Desk Icon SVG has been saved to `src/components/ui/DeskIconSVG.jsx`.
+
+**Session Date: 2025-09-27**
+
+**Summary of Progress:**
+- **Protocol Syntax Refinement:** Standardized all broadcast and messaging addresses to the elegant `@://[sender].io.[net|user]` format, enhancing protocol identity and clarity.
+- **Storage & Stability:** Eradicated critical "Bucket not found" and "NetworkError" bugs by creating the `user_files` storage bucket and implementing robust `AbortController` logic in the file system hook (`useFileSystem.js`). This dramatically improved Desk loading and file operation stability.
+- **Interactive Timeline:** Introduced a `timeline_slider` to the Message Center, allowing users to filter messages by a 24-hour timeframe.
+- **Custom Time Formatting:** Implemented a unique time measurement system. Users can now switch between `24h`, `12h`, and a custom `@nsible` `cycle` format (`1c = 42m 8s`) via the `theme` command.
+- **Kiosk Mode Escape Hatch:** Fixed a critical bug where `theme-kiosk-on` would hide the command prompt, trapping the user. A global `Cmd/Ctrl + K` shortcut now reliably toggles kiosk mode, ensuring user control is never lost.
+- **Enhanced Help Toasts:** Increased the duration of `help` command toasts to 15 seconds to improve readability and comprehension.
+- **Documentation & Logging:** Established the `void.log` for meta-commentary on development and continued appending session summaries to `aio_summary.txt`.
+- **Bug Squashing & Journaling:** Corrected a syntax error in `useFileSystem.js` and updated both `aio_summary.txt` and `void.log` to reflect our commitment to a living, evolving codebase and documentation.
