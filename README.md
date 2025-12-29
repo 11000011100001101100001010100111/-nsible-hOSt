@@ -1,6 +1,8 @@
 # -nsible-hOSt
+Publish Date 20251229
 -----The @nsible Project White Paper: 
 A Framework for Distributed, Zero-Trust Computing
+
 
 Project: @nsible Project (Web of Trust Architecture)
 Entity: Æ§ Technologies
