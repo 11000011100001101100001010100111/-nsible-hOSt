@@ -7,7 +7,7 @@ A Framework for Distributed, Zero-Trust Computing
 Project: @nsible Project (Web of Trust Architecture)
 Entity: Æ§ Technologies
 Architect: D. A. Chambre-Serres, HOSt Architect
-URI: https:ætatic.tech
+URI: https://ætatic.tech
 Executive Summary: The Shift to Persistent Presence
 
 The @nsible Project outlines a revolutionary architectural shift, replacing the "stateless" request/response model of the modern web with a persistent presence model. This framework unifies declarative infrastructure (@nsible) with decentralized identity and data transport (@://) into a singular, Distributed OS. The core philosophy is to treat the network as the kernel, operating on a 0-Trust (0t) Theorem where the user is the Root User of a Global Network.I. Core Architectural Pillars
